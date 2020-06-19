@@ -1,0 +1,632 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1. 斜切面关联连接指令DMITERLOCK · WoodMatrix</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Cat">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="TenSolockMachining.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Token/Token.html">
+            
+                <a href="../../Token/Token.html">
+            
+                    
+                    机加工指令
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../Token/Token.Type.html">
+            
+                <a href="../../Token/Token.Type.html">
+            
+                    
+                    机加工的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Token/token.AssociateIllu.html">
+            
+                <a href="../../Token/token.AssociateIllu.html">
+            
+                    
+                    什么是关联板件?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../Token/Token.Bore.html">
+            
+                <a href="../../Token/Token.Bore.html">
+            
+                    
+                    BORE单个钻孔
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../DevelopNote.md">
+            
+                <span>
+            
+                    
+                    开发日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    WoodMatrix V1.8
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1.1.1" data-path="MiterLockIns.html">
+            
+                <a href="MiterLockIns.html">
+            
+                    
+                    1. 斜切面关联连接指令DMITERLOCK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="TenSolockMachining.html">
+            
+                <a href="TenSolockMachining.html">
+            
+                    
+                    2. TENSOLOCK加工指令增加侧槽、Z向圆弧加工
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.3" data-path="CUTOUTFEEDLESSMachining.html">
+            
+                <a href="CUTOUTFEEDLESSMachining.html">
+            
+                    
+                    3. CUTOUTFEEDLESS四面切口调整加工路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.4" data-path="VCAMLOCKDrawing.html">
+            
+                <a href="VCAMLOCKDrawing.html">
+            
+                    
+                    4. VCAMLOCK加工指令增加圆弧侧槽绘制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.5" data-path="DCAMLOCKTokenCalculate.html">
+            
+                <a href="DCAMLOCKTokenCalculate.html">
+            
+                    
+                    5. DCAMLOCK加工指令增加指令五金计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.6" data-path="FindSpace.html">
+            
+                <a href="FindSpace.html">
+            
+                    
+                    6. 组件空间拾取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.7" data-path="NestingWarning.html">
+            
+                <a href="NestingWarning.html">
+            
+                    
+                    7. 基于刀具文件的Nesting信息提醒
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.8" data-path="ProductVerifyAdd.html">
+            
+                <a href="ProductVerifyAdd.html">
+            
+                    
+                    8. 产品审核-材料明细显示板件信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.9" data-path="WEAlter.html">
+            
+                <a href="WEAlter.html">
+            
+                    
+                    9. WE交互界面增加信息显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.10" data-path="PackageDesignerAdd.html">
+            
+                <a href="PackageDesignerAdd.html">
+            
+                    
+                    10. 组件定包增加阶梯容忍值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.11" data-path="CutHardwareComments.html">
+            
+                <a href="CutHardwareComments.html">
+            
+                    
+                    11. 生产五金备注输出拆解三个备注输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.12" data-path="HardwareTokenComment.html">
+            
+                <a href="HardwareTokenComment.html">
+            
+                    
+                    12.五金加工指令增加备注支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.13" data-path="MaterialUI.html">
+            
+                <a href="MaterialUI.html">
+            
+                    
+                    13.材料库增加材料规格显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" >
+            
+                <span>
+            
+                    
+                    缺陷修复
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../V1.7/README.md">
+            
+                <span>
+            
+                    
+                    WoodMatrix V1.7
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1. 斜切面关联连接指令DMITERLOCK</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;-dmiterlock"><b></b>&#x659C;&#x5207;&#x9762;&#x5173;&#x8054; DMITERLOCK</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;-dmiterlock"><a name="&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;-dmiterlock" class="anchor-navigation-ex-anchor" href="#&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;-dmiterlock"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;-dmiterlock" class="plugin-anchor" href="#&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;-dmiterlock"><i class="fa fa-link" aria-hidden="true"></i></a>&#x659C;&#x5207;&#x9762;&#x5173;&#x8054; DMITERLOCK</h3>
+<p><strong>&#x9700;&#x6C42;&#x80CC;&#x666F;</strong></p>
+<blockquote>
+<p>&#x5BA2;&#x6237;(&#x6210;&#x90FD;&#x5C3C;&#x5965;&#x3001;&#x90D1;&#x5DDE;&#x6B27;&#x66FC;)&#x5F15;&#x8FDB;&#x4E86;&#x65B0;&#x7684;&#x677F;&#x4EF6;&#x8FDE;&#x63A5;&#x4E94;&#x91D1;&#x4EF6;&#xFF1A;&#x4E09;&#x5408;&#x4E00;&#x4E1D;&#x7259;&#x6298;&#x53E0;&#x6746;&#x3002;
+&#x8BE5;&#x8FDE;&#x63A5;&#x4EF6;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#xFF1A;&#x677F;&#x4EF6;&#x4FA7;&#x8FB9;&#x5207;&#x659C;&#x9762;&#x540E;&#x4E0E;&#x53E6;&#x4E00;&#x7247;&#x677F;&#x4EF6;&#x5F62;&#x6210;&#x4E00;&#x5B9A;&#x89D2;&#x5EA6;&#x8FDE;&#x63A5;&#x3002;
+WM&#x7684;&#x5173;&#x8054;&#x4E2D;&#x4EC5;&#x6709;&#x677F;&#x4EF6;&#x5E38;&#x89C4;&#x7684;6&#x4E2A;&#x9762;&#x5173;&#x8054;&#xFF0C;&#x9700;&#x8981;&#x589E;&#x52A0;&#x5BF9;&#x677F;&#x4EF6;&#x4FA7;&#x8FB9;&#x659C;&#x5207;&#x9762;&#x7684;&#x5173;&#x8054;&#x652F;&#x6301;&#x3002;
+<a href="https://dmsoft.worktile.com/mission/projects/5e377e8ae727c16b0f47a3cf/tasks/5ea944c6f8caa41a8d31dec4" target="_blank">Worktile&#x9879;&#x76EE;&#x94FE;&#x63A5;</a>
+<a href="https://dmsoft.worktile.com/mission/projects/5e377e8ae727c16b0f47a3cf/tasks/5e9821059a72811632b69ae4" target="_blank">Worktile&#x9879;&#x76EE;&#x94FE;&#x63A5;2</a></p>
+</blockquote>
+<p><img src="images/&#x4E09;&#x5408;&#x4E00;&#x4E1D;&#x7259;&#x6298;&#x53E0;&#x6746;.jpg" alt="&#x4E09;&#x5408;&#x4E00;&#x4E1D;&#x7259;&#x6298;&#x53E0;&#x6746;"></p>
+<video src="Video\&#x4E09;&#x5408;&#x4E00;&#x6298;&#x53E0;&#x6746;&#x5B89;&#x88C5;.mp4" controls="controls" width="400px" height="300px"></video>
+<video src="video\&#x8F6C;&#x89D2;&#x4E09;&#x5408;&#x4E00;&#x5B89;&#x88C5;&#x89C6;&#x9891;.mp4" controls="controls" width="50%"></video>
+
+<p><strong>&#x529F;&#x80FD;&#x5B9E;&#x73B0;</strong></p>
+<ul>
+<li>&#x589E;&#x52A0;DIMETERLOCK&#x5173;&#x8054;&#x52A0;&#x5DE5;&#x6307;&#x4EE4;</li>
+<li>MITER&#x659C;&#x5207;&#x6307;&#x4EE4;&#x751F;&#x6548;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x677F;&#x4EF6;&#x7684;&#x9762;&#x96C6;&#x5408;&#x589E;&#x52A0;&#x8BE5;&#x6307;&#x4EE4;&#x7684;&#x659C;&#x5207;&#x9762;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x5173;&#x8054;</li>
+</ul>
+<p><strong>&#x5173;&#x8054;&#x7684;&#x8BA1;&#x7B97;</strong>
+<img src="images/MiterLock&#x751F;&#x6210;&#x6D41;&#x7A0B;.png"></p>
+<ol>
+<li><p>&#x659C;&#x5207;&#x9762;&#x7684;&#x751F;&#x6210;</p>
+<pre><code> &#x659C;&#x5207;&#x9762;&#x7531;&#x52A0;&#x5DE5;&#x9762;&#x3001;&#x659C;&#x5207;&#x89D2;&#x5EA6;&#x51B3;&#x5B9A;&#x3002;
+ &#x659C;&#x5207;&#x89D2;&#x5EA6;&#x8303;&#x56F4;&#xFF1A;-90&#xB0;~90&#xB0;
+ &#x659C;&#x5207;&#x89D2;&#x5EA6;&#x5B9A;&#x4E49;&#xFF1A;&#x659C;&#x5207;&#x9762;&#x4E0E;&#x677F;&#x4EF6;&#x9762;5&#x6216;&#x9762;6&#x5F62;&#x6210;&#x7684;&#x5939;&#x89D2;
+ &#x5F53;&#x89D2;&#x5EA6;&#x5927;&#x4E8E;0&#x65F6;&#xFF0C;&#x4EE5;&#x677F;&#x4EF6;&#x9762;5&#x4E3A;&#x89D2;&#x70B9;&#x505A;&#x659C;&#x5207;&#xFF1B;
+ &#x5F53;&#x89D2;&#x5EA6;&#x5C0F;&#x4E8E;0&#x65F6;&#xFF0C;&#x4EE5;&#x677F;&#x4EF6;&#x9762;6&#x4E3A;&#x89D2;&#x70B9;&#x505A;&#x659C;&#x5207;
+</code></pre><p> <img src="images/MiterLock&#x659C;&#x5207;&#x9762;.png" width="60%"></p>
+</li>
+<li><p><a href="../../Token/token.AssociateIllu.html">&#x67E5;&#x627E;&#x5173;&#x8054;&#x9762;</a></p>
+</li>
+<li><p>&#x5173;&#x8054;&#x7ED3;&#x6784;&#x4E0E;&#x52A0;&#x5DE5;</p>
+<ul>
+<li>&#x4E0D;&#x8BBA;&#x659C;&#x5207;&#x9762;&#x662F;&#x5426;&#x5B58;&#x5728;&#x5173;&#x8054;&#xFF0C;&#x659C;&#x5207;&#x9762;&#x59CB;&#x7EC8;&#x751F;&#x6210;&#xFF1B;&#x5B54;&#x4F4D;&#x5728;&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#x624D;&#x751F;&#x6210;</li>
+<li><p>&#x659C;&#x5207;&#x9762;&#x4E0E;&#x9762;5&#x9762;6&#x5173;&#x8054;</p>
+<pre><code>  &#x88AB;&#x5173;&#x8054;&#x677F;&#x4EF6;&#x751F;&#x6210;&#x4E00;&#x7EC4;&#x5173;&#x8054;&#x5782;&#x76F4;&#x5B54;
+</code></pre><p>  <img src="images/&#x659C;&#x5207;&#x5173;&#x8054;&#x793A;&#x610F;&#x56FE;.png" width="50%" title="&#x4E0E;&#x9762;5&#x9762;6&#x5173;&#x8054;"></p>
+</li>
+<li><p>&#x659C;&#x5207;&#x9762;&#x4E0E;&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;</p>
+<pre><code>  &#x88AB;&#x5173;&#x8054;&#x677F;&#x4EF6;&#x751F;&#x6210;&#x6C34;&#x5E73;&#x5B54;&#x548C;&#x989D;&#x5916;&#x7684;&#x504F;&#x5FC3;&#x8F6E;&#x3002;&#x4E24;&#x677F;&#x4EF6;&#x504F;&#x5FC3;&#x8F6E;&#x8DDD;&#x8FB9;Backset&#x4E00;&#x81F4;&#x3002;
+  &#x5173;&#x8054;&#x504F;&#x5FC3;&#x8F6E;&#x6240;&#x5728;&#x7684;&#x9762;&#x4E0E;&#x53E6;&#x4E00;&#x7247;&#x677F;&#x4EF6;&#x5728;&#x540C;&#x4E00;&#x4FA7;&#x3002;
+</code></pre><p>  <img src="images/MiterLock&#x5173;&#x8054;2.png" width="50%" title="&#x659C;&#x5207;&#x9762;&#x4E0E;&#x659C;&#x5207;&#x9762;&#x5173;&#x8054;"></p>
+</li>
+<li><p>&#x5173;&#x8054;&#x504F;&#x5FC3;&#x8F6E;&#x6240;&#x5728;&#x9762;&#x7684;&#x8BA1;&#x7B97;</p>
+<pre><code>  //&#x4E24;&#x677F;&#x4EF6;&#x5939;&#x89D2;&#x5411;&#x91CF;&#x548C;&#x4E0E;&#x4E24;&#x504F;&#x5FC3;&#x8F6E;&#x6240;&#x5728;&#x9762;&#x7684;&#x6CD5;&#x5411;&#x91CF;&#x4E4B;&#x548C;&#x5E73;&#x884C;
+  Vector3d v1;//&#x677F;&#x4EF6;&#x5939;&#x89D2;&#x5411;&#x91CF;v1
+  Vector3d v2;//&#x677F;&#x4EF6;&#x5939;&#x89D2;&#x5411;&#x91CF;v2
+  Vector3d camV1;//&#x504F;&#x5FC3;&#x8F6E;1&#x6240;&#x5728;&#x9762;&#x6CD5;&#x5411;&#x91CF;
+  Vector3d camV2;//&#x504F;&#x5FC3;&#x8F6E;2&#x6240;&#x5728;&#x9762;&#x6CD5;&#x5411;&#x91CF;
+  v3=v1+v2;//&#x677F;&#x4EF6;&#x5939;&#x89D2;&#x5411;&#x91CF;&#x548C;
+  v4=camV1+camV2;//&#x504F;&#x5FC3;&#x8F6E;&#x6240;&#x5728;&#x9762;&#x5411;&#x91CF;&#x548C;
+  v3.IsParallelTo(V4);//&#x5411;&#x91CF;&#x662F;&#x5426;&#x5E73;&#x884C;
+  //&#x7279;&#x6B8A;&#x7684;&#x5F53;v1+v2&#x4E3A;0&#x957F;&#x5EA6;&#x5411;&#x91CF;&#xFF0C;&#x5373;&#x4E24;&#x677F;&#x4EF6;&#x6210;180&#xB0;&#x6446;&#x653E;&#x65F6;&#xFF0C;&#x504F;&#x5FC3;&#x8F6E;&#x65B9;&#x5411;&#x9700;&#x8981;&#x4E00;&#x81F4;
+  camV1.IsEqual(camV2);//&#x5224;&#x65AD;&#x504F;&#x5FC3;&#x8F6E;&#x65B9;&#x5411;&#x662F;&#x5426;&#x4E00;&#x81F4;
+</code></pre></li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 功能">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="TenSolockMachining.html" class="navigation navigation-next " aria-label="Next page: 2. TENSOLOCK加工指令增加侧槽、Z向圆弧加工">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1. 斜切面关联连接指令DMITERLOCK","level":"1.3.1.1.1","depth":4,"next":{"title":"2. TENSOLOCK加工指令增加侧槽、Z向圆弧加工","level":"1.3.1.1.2","depth":4,"path":"DevNotes/V1.8/TenSolockMachining.md","ref":"DevNotes/V1.8/TenSolockMachining.md","articles":[]},"previous":{"title":"功能","level":"1.3.1.1","depth":3,"path":"DevNotes/V1.8/README.md","ref":"DevNotes/V1.8/README.md","articles":[{"title":"1. 斜切面关联连接指令DMITERLOCK","level":"1.3.1.1.1","depth":4,"path":"DevNotes/V1.8/MiterLockIns.md","ref":"DevNotes/V1.8/MiterLockIns.md","articles":[]},{"title":"2. TENSOLOCK加工指令增加侧槽、Z向圆弧加工","level":"1.3.1.1.2","depth":4,"path":"DevNotes/V1.8/TenSolockMachining.md","ref":"DevNotes/V1.8/TenSolockMachining.md","articles":[]},{"title":"3. CUTOUTFEEDLESS四面切口调整加工路径","level":"1.3.1.1.3","depth":4,"path":"DevNotes/V1.8/CUTOUTFEEDLESSMachining.md","ref":"DevNotes/V1.8/CUTOUTFEEDLESSMachining.md","articles":[]},{"title":"4. VCAMLOCK加工指令增加圆弧侧槽绘制","level":"1.3.1.1.4","depth":4,"path":"DevNotes/V1.8/VCAMLOCKDrawing.md","ref":"DevNotes/V1.8/VCAMLOCKDrawing.md","articles":[]},{"title":"5. DCAMLOCK加工指令增加指令五金计算","level":"1.3.1.1.5","depth":4,"path":"DevNotes/V1.8/DCAMLOCKTokenCalculate.md","ref":"DevNotes/V1.8/DCAMLOCKTokenCalculate.md","articles":[]},{"title":"6. 组件空间拾取","level":"1.3.1.1.6","depth":4,"path":"DevNotes/V1.8/FindSpace.md","ref":"DevNotes/V1.8/FindSpace.md","articles":[]},{"title":"7. 基于刀具文件的Nesting信息提醒","level":"1.3.1.1.7","depth":4,"path":"DevNotes/V1.8/NestingWarning.md","ref":"DevNotes/V1.8/NestingWarning.md","articles":[]},{"title":"8. 产品审核-材料明细显示板件信息","level":"1.3.1.1.8","depth":4,"path":"DevNotes/V1.8/ProductVerifyAdd.md","ref":"DevNotes/V1.8/ProductVerifyAdd.md","articles":[]},{"title":"9. WE交互界面增加信息显示","level":"1.3.1.1.9","depth":4,"path":"DevNotes/V1.8/WEAlter.md","ref":"DevNotes/V1.8/WEAlter.md","articles":[]},{"title":"10. 组件定包增加阶梯容忍值","level":"1.3.1.1.10","depth":4,"path":"DevNotes/V1.8/PackageDesignerAdd.md","ref":"DevNotes/V1.8/PackageDesignerAdd.md","articles":[]},{"title":"11. 生产五金备注输出拆解三个备注输出","level":"1.3.1.1.11","depth":4,"path":"DevNotes/V1.8/CutHardwareComments.md","ref":"DevNotes/V1.8/CutHardwareComments.md","articles":[]},{"title":"12.五金加工指令增加备注支持","level":"1.3.1.1.12","depth":4,"path":"DevNotes/V1.8/HardwareTokenComment.md","ref":"DevNotes/V1.8/HardwareTokenComment.md","articles":[]},{"title":"13.材料库增加材料规格显示","level":"1.3.1.1.13","depth":4,"path":"DevNotes/V1.8/MaterialUI.md","ref":"DevNotes/V1.8/MaterialUI.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["mermaid-gb3","splitter","expandable-chapters-small","anchors","anchor-navigation-ex","-lunr","-search","search-pro","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Cat","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"WoodMatrix","language":"zh-hans","gitbook":"3.2.3","description":"WoodMatrix"},"file":{"path":"DevNotes/V1.8/MiterLockIns.md","mtime":"2020-06-16T06:35:45.846Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-16T08:24:03.763Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
